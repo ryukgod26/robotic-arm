@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 Robotic Arm</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        
+        h2{
+            color: #333;
+        }
+
+        .slider-container{
+            background: #fff;
+            padding: 20px;
+            margin: 15px auto;
+            border-radius: 8px;
+            max-width: 400px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        p{
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Robotic Arm Control</h2>
+
+    <div class="slider-container">
+        <p>Motor1: <span id="val1">90</span>&deg;</p>
+        <input type="range" min="0" max="180" value="90" class="slider" id="motor1" oninput="updateMotor(1, this.value)">
+    </div>
+
+    <div class="slider-container">
+        <p>Motor2: <span id="val2">90</span>&deg;</p>
+        <input type="range" min="0" max="180" value="90" class="slider" id="motor2" oninput="updateMotor(2, this.value)">
+    </div>
+
+    <div class="slider-container">
+        <p>Motor3: <span id="val3">90</span>&deg;</p>
+        <input type="range" min="0" max="180" value="90" class="slider" id="motor3" oninput="updateMotor(3, this.value)">
+    </div>
+
+    <script>
+        function updateMotor(motor, angle){
+            document.getElementById("val" + motor).innerHTML = angle;
+            fetch(`/set?motor=${motor}&angle=${angle}`);
+        }
+    </script>
+</body>
+</html>

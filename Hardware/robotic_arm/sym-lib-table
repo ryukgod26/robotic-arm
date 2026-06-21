@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ESP32-DEVKIT-V1")(type "KiCad")(uri "D:/Fallout/robotic-arm/Hardware/ESP32-DEVKIT-V1/ESP32-DEVKIT-V1.kicad_sym")(options "")(descr ""))
+  (lib (name "MT3608_DC-DC_STEP_UP_CONVERTER_2A_BOOSTER_MODULE")(type "KiCad")(uri "D:/Fallout/robotic-arm/Hardware/MT3608_DC-DC_STEP_UP_CONVERTER_2A_BOOSTER_MODULE/MT3608_DC-DC_STEP_UP_CONVERTER_2A_BOOSTER_MODULE.kicad_sym")(options "")(descr ""))
+  (lib (name "EG1218")(type "KiCad")(uri "D:/Fallout/robotic-arm/Hardware/EG1218 (1)/EG1218.kicad_sym")(options "")(descr ""))
+)
