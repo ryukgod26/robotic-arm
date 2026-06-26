@@ -24,3 +24,4 @@ Bunch of Cables
 | Servo Motor | 3 | $7.5 | [Quartz](https://quartzcomponents.com/products/mg995-metal-gear-servo-motor-180-degree-rotation) | Quartz Components |
 | TP4056 | 1 | $0.2 | [Robu](https://robu.in/product/tp4056-1a-li-ion-battery-charging-board-micro-usb-with-current-protection-type-c-connector/) | Robu |
 | Booster Module | 1 | $0.3 | [robu](https://robu.in/product/mt3608-2a-max-dc-dc-step-up-power-module-booster-power-module/) | Robu |
+| Total | 6 | $12.00 |  |  |
